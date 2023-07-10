@@ -52,7 +52,32 @@ body {
   border-radius: 8px;
   border: 1px solid #19182b40;
   margin: 24px;
+  box-sizing: border-box;
+  padding-left: 24px;
+  margin-top: 8px;
 }
+
+.signup input[type="email"]:hover {
+  cursor: pointer;
+}
+
+.signup #email-label {
+  font-family: Roboto;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
+  align-self: flex-start;
+  margin-left: 24px;
+}
+
+/* .signup input[type="email"]::placeholder {
+  color: var(--dark-navy, #242742);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+} */
 
 .signup h1 {
   color: var(--dark-navy, #242742);
@@ -75,6 +100,16 @@ body {
   line-height: 100%;
   color: white;
   border: none;
+  box-sizing: border-box;
+}
+
+.signup input[type="submit"]:hover {
+  background: var(
+    --gradient-1,
+    linear-gradient(225deg, #ff6a3a 0%, #ff527b 100%)
+  );
+  box-shadow: 0px 16px 32px 0px rgba(255, 97, 85, 0.5);
+  cursor: pointer;
 }
 
 .signup ul {
